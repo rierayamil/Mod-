@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1.5px;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #098313;
+    color: #098313 !important;
+}
+
+/* comienzo del NAVBAR */
+header {
+    top: 0;
+    width: 100%;
+    color: aliceblue;
+    border: 1px solid rgba(194, 194, 194, 0.61);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    /* box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); */
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+    text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+}
+
+.nav-item:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.849);
+}
+
+.logo {
+    /* text-shadow: 0 0 10px rgb(0, 0, 0); */
+    text-decoration: underline;
+}
+
+.logo:hover {
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.buscador {
+    align-self: center;
+    flex-grow: 1;
+    font-size: 14px;
+    color: #111;
+    position: relative;
+    background-color: #eee;
+    border: 1px solid #0000;
+    border-radius: 24px;
+    height: 40px;
+    display: flex;
+    transition: all .1s ease-in-out;
+}
+
+.lupa {
+    background-color: initial;
+    border: none;
+    font-weight: inherit;
+    padding: 10px;
+    text-align: inherit;
+}
+
+input {
+    padding: 10px;
+    background: none;
+    border: none;
+    color: #111;
+    width: 20rem;
+}
+
+.usuario {
+    align-items: center;
+    
+}
+
+.iniciarSesion {
+    margin: 10px;
+    border-radius: 24px;
+    width: 8rem;
+    height: 40px;
+    border: none;
+    background-color: rgba(95, 95, 95, 0.158);
+    color: #000000;
+}
+.iniciarSesion:hover{
+    color: #098313;
+    background-color: #92adf7a1;
+}
+
+.perfil {
+    margin: 0px 10px 0px 5px;
+    scale: 2.7;
+    color: #098313;
+}
+
+.caja {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    width: 100%;
+}
+
+.box {
+    margin-top: -300px;
+    width: 400px;
+    height: 400px;
+    border-radius: 30%;
+    position: fixed;
+    z-index: -20;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.n1 {
+    background-color: rgb(21, 255, 0);
+    animation-name: circulo1;
+}
+
+.n2 {
+    background-color: rgb(53, 255, 2);
+    animation-name: circulo2;
+}
+
+.n3 {
+    background-color: rgb(27, 190, 13);
+    animation-name: circulo3;
+}
+
+.n4 {
+    background-color: rgb(0, 160, 8);
+    animation-name: circulo4;
+}
+
+
+@keyframes circulo1 {
+    0% {
+        transform: translate(10%);
+        transform: rotate(0);
+    }
+
+    40% {
+        transform: translate(300%, 90%);
+    }
+
+    80% {
+        transform: translate(-90%, 80%);
+    }
+
+    100% {
+        transform: translate(10%);
+
+    }
+}
+
+@keyframes circulo2 {
+    0% {
+        transform: translate(-30%);
+    }
+
+    50% {
+        transform: translate(100%, 60%);
+    }
+
+    100% {
+        transform: translate(-30%);
+    }
+}
+
+@keyframes circulo3 {
+    0% {
+        transform: translate(100%);
+    }
+
+    40% {
+        transform: translate(400%, -50%);
+    }
+
+    80% {
+        transform: translate(300%, -50%);
+    }
+
+    100% {
+        transform: translate(100%);
+    }
+}
+
+@keyframes circulo4 {
+    0% {
+        transform: translate(0%);
+    }
+
+    40% {
+        transform: translate(0%, 10%);
+    }
+
+    80% {
+        transform: translate(30%, -10%);
+    }
+
+    100% {
+        transform: translate(0%);
+    }
+}                             /* FIN DEL NAVBAR */
+
+                             /* COMIENZO DEL MAIN */
+
+.contenido{
+    background-color: #3b3b3b3b;
+    border-radius: 10px;
+    margin-top: 6%;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagenes{
+    justify-content: space-around;
+}
+
+ .container h4{
+    align-items: center;
+    text-align: center;
+ }
+
+.imagenes img {
+    border: solid 1px #2c2c2c5d;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    transition:0.3s;
+   
+    
+ }
+ img:hover{
+    scale: 1.1;
+ }                          

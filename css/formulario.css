@@ -23,13 +23,16 @@ h1 {
   margin-bottom: 15px;
 }
 
-h1.title {
+.logo{
+    color: #fff;
     font-size: 45px;
     line-height: 45px;
-    /* margin: 0; */
-    margin-bottom: 30px;
+       margin-bottom: 30px;
     text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
     text-decoration: underline;
+}
+.logo:hover {
+  color: #2ab931;
 }
 h2{
     margin-bottom: 10px;
@@ -91,8 +94,8 @@ button {
   cursor: pointer;
   position: relative;
   border-radius: 20px;
-  border: 1px solid #6b4bb7;
-  background-color: #5f2da1;
+  border: 1px solid #4bb78a;
+  background-color: #17ca26;
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -200,6 +203,7 @@ input {
 }
 
 .overlay-container {
+  
   position: absolute;
   top: 0;
   left: 50%;
@@ -215,7 +219,8 @@ input {
 }
 
 .overlay {
-  background-image: url('/img/QWfb.gif');
+  
+  background-image: url('/img/2I3c.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -237,7 +242,7 @@ input {
   bottom: 0;
   background: linear-gradient(
     to top,
-    rgba(46, 94, 109, 0.4) 40%,
+    rgba(38, 86, 100, 0.4) 40%,
     rgba(46, 94, 109, 0)
   );
 }
@@ -247,6 +252,7 @@ input {
 }
 
 .overlay-panel {
+  backdrop-filter: blur(5px);
   position: absolute;
   display: flex;
   align-items: center;
