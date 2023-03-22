@@ -8,17 +8,21 @@
     letter-spacing: -1.5px;
     font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: #098313;
-    color: #098313 !important;
-}
 
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #15b923;
+    border-radius: 10px;
+    
+}
 /* comienzo del NAVBAR */
 header {
     top: 0;
     width: 100%;
     color: aliceblue;
-    border: 1px solid rgba(194, 194, 194, 0.61);
+    border: 1px solid rgba(194, 194, 194, 0.137);
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
     /* box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); */
@@ -27,13 +31,14 @@ header {
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.39);
     backdrop-filter: blur(30px);
-    text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+    /* text-shadow: 0 0 10px rgba(16, 64, 74, 0.5); */
 }
 
 .nav-item:hover{
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.849);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    text-decoration: underline 2px black;
 }
 
 .logo {
@@ -47,6 +52,7 @@ nav {
 }
 
 .buscador {
+    width: 20rem;
     align-self: center;
     flex-grow: 1;
     font-size: 14px;
@@ -73,8 +79,9 @@ input {
     background: none;
     border: none;
     color: #111;
-    width: 20rem;
+    width: 90%;
 }
+
 
 .usuario {
     align-items: center;
@@ -82,7 +89,7 @@ input {
 }
 
 .iniciarSesion {
-    margin: 10px;
+    
     border-radius: 24px;
     width: 8rem;
     height: 40px;
@@ -97,9 +104,13 @@ input {
 
 .perfil {
     margin: 0px 10px 0px 5px;
-    scale: 2.7;
-    color: #098313;
+    scale: 2.5;
+    color: #0ec91ebb;
 }
+
+/* fin header */
+
+
 
 .caja {
     background-color: rgba(255, 255, 255, 0);
@@ -114,7 +125,7 @@ input {
     border-radius: 30%;
     position: fixed;
     z-index: -20;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
@@ -126,19 +137,20 @@ input {
 }
 
 .n2 {
-    background-color: rgb(53, 255, 2);
+    background-color: rgb(51, 255, 0);
     animation-name: circulo2;
 }
 
 .n3 {
-    background-color: rgb(27, 190, 13);
+    background-color: rgba(255, 255, 255, 0.918);
     animation-name: circulo3;
 }
-
 .n4 {
-    background-color: rgb(0, 160, 8);
+    background-color: rgb(255, 255, 255);
     animation-name: circulo4;
 }
+
+
 
 
 @keyframes circulo1 {
@@ -177,19 +189,19 @@ input {
 
 @keyframes circulo3 {
     0% {
-        transform: translate(100%);
+        transform: translate(-70%);
     }
 
     40% {
-        transform: translate(400%, -50%);
+        transform: translate(-200%, 100%);
     }
 
     80% {
-        transform: translate(300%, -50%);
+        transform: translate(300%, 75%);
     }
 
     100% {
-        transform: translate(100%);
+        transform: translate(-70%);
     }
 }
 
@@ -216,12 +228,13 @@ input {
 .contenido{
     background-color: #3b3b3b3b;
     border-radius: 10px;
-    margin-top: 6%;
+    margin-top: 7rem;
     align-items: center;
     justify-content: space-around;
 }
 .imagenes{
     justify-content: space-around;
+    border-radius: 20px;
 }
 
  .container h4{
@@ -229,15 +242,15 @@ input {
     text-align: center;
  }
 
-.imagenes img {
+.container img {
     border: solid 1px #2c2c2c5d;
-    width: 300px;
+    width: 200px;
     border-radius: 5px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
     transition:0.3s;
    
     
  }
- img:hover{
+ .container img:hover{
     scale: 1.1;
  }                          

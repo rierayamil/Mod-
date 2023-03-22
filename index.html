@@ -27,6 +27,7 @@
       <div class="box n3">3</div>
 
     </div>
+
     <nav class="navbar navbar-expand-md">
 
       <div class="container-fluid">
@@ -35,14 +36,18 @@
           <h1 class="logo"> ModÉ<h1></h1>
         </a>
 
-        <!-- botón menu -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <!-- elementos del menu  -->
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav me-auto">
+          <div class="usuario navbar-nav d-flex flex-row flex-wrap">
+            <form class="buscador" data-test="nav-bar-search-form-form">
+              <button class="lupa" data-test="nav-bar-search-form-button"><i class='bx bx-search-alt'></i></button>
+              <input class="search" placeholder="Buscar">
+            </form>
+
+          </div>
+
+          <ul class="navbar-nav me-auto ">
             <li class="nav-item"><a class="nav-link" href="">Hombres</a></li>
             <li class="nav-item"><a class="nav-link" href="">Mujeres</a></li>
             <li class="nav-item"><a class="nav-link" href="">Niños</a></li>
@@ -50,42 +55,101 @@
             <li class="nav-item"><a class="nav-link" href=""><i class='bx bx-heart'></i></a></li>
             <li class="nav-item"><a class="nav-link" href=""><i class='bx bxs-cart-alt'></i></a></li>
           </ul>
-          <div class="usuario navbar-nav d-flex flex-row flex-wrap">
-            <form class="buscador" data-test="nav-bar-search-form-form">
-              <button class="lupa" data-test="nav-bar-search-form-button"><i class='bx bx-search-alt'></i></button>
-              <input class="search" placeholder="Buscar">
-            </form>
-            <a href="/pages/formulario.html">
-              <button class="iniciarSesion">Iniciar Sesión</button>
-              <i class='perfil bx bxs-user-circle'></i>
-            </a>
-          </div>
+
         </div>
+        <a class="" href="/pages/formulario.html">
+          <button class="iniciarSesion ">Iniciar Sesión</button>
+          <i class='perfil bx bxs-user-circle'></i>
+        </a>
+        <!-- botón menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
       </div>
+
 
     </nav>
   </header>
-  <main class="contenido">
+
+
+  <main class="contenido container-fluid ">
 
     <!-- carousel -->
-    <div>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/img/mujeres/imagen1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/mujeres/imagen2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/mujeres/imagen3.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-    </div>
-  </div>
-    <!--     fin carousel -->
 
-    <div class="container">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-sr-id="2"
+      style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 4s cubic-bezier(0.5, 0, 0, 1) 0s;">
+      <!-- <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div> -->
+
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item">
+          <img class="bd-placeholder-img img-fluid" src="/img/mujeres/imagen1.jpg" aria-hidden="true"
+            preserveaspectratio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777">
+            <div class="text position absolute align-bottom"">
+              <div class="carousel-caption text-sm-start">
+                <h1>Encuentra tu estilo</h1>
+                <p>Diseños Originales</p>
+                <p><a class="btn btn-md btn-md" style="background-color:#0ec91ebb;" href="#">Ver Artículos &gt;&gt; </a>
+                </p>
+              </div>
+            </div>
+          </rect>
+        </div>
+
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img img-fluid" src="/img/mujeres/imagen2.jpg" aria-hidden="true"
+            preserveaspectratio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777">
+            <div class="text">
+              <div class="carousel-caption ">
+                <h1>Tendencia Internacional</h1>
+                <p>100% calidad</p>
+                <p><a class="btn btn-md btn-md " style="background-color:#0ec91ebb;" href="#contactar">Ver
+                    Artículos...</a></p>
+              </div>
+            </div>
+          </rect>
+        </div>
+
+        <div class="carousel-item">
+          <img class="bd-placeholder-img img-fluid" src="/img/mujeres/imagen3.jpg" aria-hidden="true"
+            preserveaspectratio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777">
+            <div class="text">
+              <div class="carousel-caption text-end ">
+                <h1>Descuentos increíbles!!</h1>
+                <p>Encuentra beneficios exclusivos</p>
+                <p><a class="btn btn-md btn-md" style="background-color:#0ec91ebb;" href="#">Muéstrame %</a></p>
+              </div>
+            </div>
+          </rect>
+        </div>
+
+      </div>
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    
+    <!-- imágenes -->
+    <!--  <div class="container">
       <h4 class="title">Novedades</h4>
       <div class="imagenes d-flex d-flex flex-wrap  ">
 
@@ -98,7 +162,7 @@
         <div><img src="/img/mujeres/img7.jpg" alt=""></div>
         <div><img src="/img/mujeres/img8.jpg" alt=""></div>
       </div>
-
+ -->
   </main>
 
 
