@@ -9,14 +9,16 @@
     font-family: "Poppins", sans-serif;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 7px;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: #15b923;
     border-radius: 10px;
-    
+
 }
+
 /* comienzo del NAVBAR */
 header {
     top: 0;
@@ -31,12 +33,13 @@ header {
 }
 
 nav {
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.39);
     backdrop-filter: blur(30px);
     /* text-shadow: 0 0 10px rgba(16, 64, 74, 0.5); */
 }
 
-.nav-item:hover{
+.nav-item:hover {
     text-shadow: 0 0 10px rgb(255, 255, 255);
     text-decoration: underline 2px black;
 }
@@ -85,11 +88,11 @@ input {
 
 .usuario {
     align-items: center;
-    
+
 }
 
-.iniciarSesion {
-    
+.iniciarSesión {
+
     border-radius: 24px;
     width: 8rem;
     height: 40px;
@@ -97,7 +100,8 @@ input {
     background-color: rgba(95, 95, 95, 0.158);
     color: #000000;
 }
-.iniciarSesion:hover{
+
+.iniciarSesión:hover {
     color: #098313;
     background-color: #92adf7a1;
 }
@@ -108,10 +112,10 @@ input {
     color: #0ec91ebb;
 }
 
-/* fin header */
+/* fin NAVBAR */
 
 
-
+/* COMIENZO ANIMACION VERDE */
 .caja {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(20px);
@@ -145,8 +149,9 @@ input {
     background-color: rgba(255, 255, 255, 0.918);
     animation-name: circulo3;
 }
+
 .n4 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(26, 221, 26);
     animation-name: circulo4;
 }
 
@@ -155,8 +160,8 @@ input {
 
 @keyframes circulo1 {
     0% {
-        transform: translate(10%);
-        transform: rotate(0);
+        transform: translate(50%);
+
     }
 
     40% {
@@ -168,40 +173,36 @@ input {
     }
 
     100% {
-        transform: translate(10%);
+        transform: translate(50%);
 
     }
 }
 
 @keyframes circulo2 {
     0% {
-        transform: translate(-30%);
+        transform: translate(-300%);
     }
 
     50% {
-        transform: translate(100%, 60%);
+        transform: translate(100%, 90%);
     }
 
     100% {
-        transform: translate(-30%);
+        transform: translate(-300%);
     }
 }
 
 @keyframes circulo3 {
     0% {
-        transform: translate(-70%);
+        transform: translate(-40%);
     }
 
-    40% {
-        transform: translate(-200%, 100%);
-    }
-
-    80% {
-        transform: translate(300%, 75%);
+    50% {
+        transform: translate(20%, 100%);
     }
 
     100% {
-        transform: translate(-70%);
+        transform: translate(-40%);
     }
 }
 
@@ -210,47 +211,122 @@ input {
         transform: translate(0%);
     }
 
-    40% {
-        transform: translate(0%, 10%);
+    50% {
+        transform: translate(500%, -40%);
     }
 
-    80% {
-        transform: translate(30%, -10%);
-    }
 
     100% {
         transform: translate(0%);
     }
-}                             /* FIN DEL NAVBAR */
+}
 
-                             /* COMIENZO DEL MAIN */
+/* FIN ANIMACIÓN VERDE */
 
-.contenido{
+/* COMIENZO DEL MAIN */
+
+.contenido {
     background-color: #3b3b3b3b;
     border-radius: 10px;
     margin-top: 7rem;
     align-items: center;
     justify-content: space-around;
 }
-.imagenes{
+
+.imágenes {
     justify-content: space-around;
     border-radius: 20px;
 }
 
- .container h4{
+.container h4 {
     align-items: center;
     text-align: center;
- }
+}
 
 .container img {
     border: solid 1px #2c2c2c5d;
     width: 200px;
     border-radius: 5px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-    transition:0.3s;
-   
-    
- }
- .container img:hover{
+    transition: 0.3s;
+
+
+}
+
+.container img:hover {
     scale: 1.1;
- }                          
+}
+
+/* FIN DEL MAIN */
+
+
+
+
+/* inicio carousel infinito logos */
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.slider .slide-track {
+    display: flex;
+    align-items: center;
+    animation: scroll 1s linear infinite;
+    -webkit-animation: scroll 80s linear infinite;
+    width: calc(100px * 25);
+}
+
+
+.slider .slide {
+    align-items: center;
+    width: 100%;
+
+}
+
+.slider .slide img {
+    width: 50px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(-300px * 100);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100px * 20);
+        transform: translateX(calc(-100px * 20));
+
+    }
+
+
+}
+
+/* fin carousel infinito logos */
+
+/* inicio cards */
+.cards{
+margin-top: 100px;
+}
+.card,.card2 {
+    width: max-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.card-body {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
