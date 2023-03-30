@@ -21,9 +21,12 @@
 </head>
 
 <body>
-  <header class="">
-    <div class="caja">
 
+
+  <!-- comienzo del header -->
+  <header>
+
+    <div class="caja">
       <div class="box n2">2</div>
       <div class="box n1">1</div>
       <div class="box n3">3</div>
@@ -31,14 +34,11 @@
     </div>
 
     <nav class="navbar navbar-expand-md">
-
       <div class="container-fluid">
 
         <a href="" class="navbar-brand">
           <h2 class="logo"> ModÉ </h2>
         </a>
-
-
         <!-- elementos del menu  -->
         <div class="collapse navbar-collapse" id="menu">
           <div class="usuario navbar-nav d-flex flex-row flex-wrap">
@@ -46,10 +46,9 @@
               <button class="lupa" data-test="nav-bar-search-form-button"><i class='bx bx-search-alt'></i></button>
               <input class="search" placeholder="Buscar">
             </form>
-
           </div>
 
-          <ul class="navbar-nav me-auto ">
+          <ul class="navbar-nav m-auto ">
             <li class="nav-item"><a class="nav-link" href="">Hombres</a></li>
             <li class="nav-item"><a class="nav-link" href="">Mujeres</a></li>
             <li class="nav-item"><a class="nav-link" href="">Niños</a></li>
@@ -57,8 +56,8 @@
             <li class="nav-item"><a class="nav-link" href=""><i class='bx bx-heart'></i></a></li>
             <li class="nav-item"><a class="nav-link" href=""><i class='bx bxs-cart-alt'></i></a></li>
           </ul>
-
         </div>
+
         <a class="" href="/pages/formulario.html">
           <button class="iniciarSesión">Iniciar Sesión</button>
           <i class='perfil bx bxs-user-circle'></i>
@@ -69,17 +68,16 @@
           <span class="navbar-toggler-icon "></span>
         </button>
       </div>
-
-
     </nav>
   </header>
+  <!-- FIN del header -->
 
 
-  <main class="contenido container-fluid ">
+<!-- comienzo del main -->
+  <main class="contenido ">
 
     <!-- carousel -->
-
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-sr-id="2"
+    <div id="myCarousel" class="carousel slide " data-bs-ride="carousel" data-sr-id="2"
       style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 4s cubic-bezier(0.5, 0, 0, 1) 0s;">
       <!-- <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -96,7 +94,7 @@
             preserveaspectratio="xMidYMid slice" focusable="false">
           <rect width="100%" height="100%" fill="#777">
             <div class="text">
-              <div class="carousel-caption text-start position-absolute ">
+              <div class="carousel-caption text-start position-absolute">
                 <h1>Encuentra tu estilo</h1>
                 <p>Diseños Originales</p>
                 <p><a class="btn btn-md btn-md" style="background-color:#0ec91ebb;" href="#">Ver Artículos &gt;&gt; </a>
@@ -137,7 +135,6 @@
 
       </div>
 
-
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -150,14 +147,15 @@
     </div>
     <!-- FIN carousel -->
 
+
     <!-- COMIENZO cards -->
-
-
-
-    <div class="cards " style="max-width: 1000px;">
-      <div class="card mb-3" style="max-width: 1000px;">
+    <div class="cards  ">
+<div class="container">
+  <h1>NOVEDADES:</h1>
+</div>
+      <div class="card card-first mb-3">
         <div class="row g-0 ">
-          <div class="col-md-2">
+          <div class="col-md-2 ">
             <img src="/img/mujeres/img1.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-10 vstack gap-2 col-md-5 mx-auto">
@@ -172,7 +170,7 @@
       </div>
 
 
-      <div class="card2 mb-3" style="max-width: 1000px;">
+      <div class="card card-second mb-3">
         <div class="row g-0 ">
 
           <div class="col-md-10 vstack gap-2 col-md-5 mx-auto">
@@ -189,108 +187,172 @@
         </div>
       </div>
 
-
-      <!--    FIN cards -->
-
-
-      <!--  inicio carousel infinito logos  -->
-      <div class="slider">
-
-        <div class="slide-track">
-
-          <div class="slide">
-            <img src="/img/logos/01.png" alt="">
+      <div class="card card-first mb-3">
+        <div class="row g-0 ">
+          <div class="col-md-2 ">
+            <img src="/img/mujeres/img7.jpg" class="img-fluid rounded-start" alt="...">
           </div>
-
-          <div class="slide">
-            <img src="/img/logos/02.png" alt="">
+          <div class="col-md-10 vstack gap-2 col-md-5 mx-auto">
+            <div class="card-body ">
+              <h1 class="card-title ">Lorem ipsum</h1>
+              <h5 class="card-text ">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</h5>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
-
-          <div class="slide">
-            <img src="/img/logos/03.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/04.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/05.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/06.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/07.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/08.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/09.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/10.png" alt="">
-          </div>
-
-          <!-- ----------- -->
-
-          <div class="slide">
-            <img src="/img/logos/01.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/02.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/03.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/04.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/05.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/06.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/07.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/08.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/09.png" alt="">
-          </div>
-
-          <div class="slide">
-            <img src="/img/logos/10.png" alt="">
-          </div>
-
         </div>
       </div>
-      <!--  FIN carousel infinito logos  -->
+    </div>
+    <!--    FIN cards -->
 
+
+    <!--  inicio carousel infinito logos  -->
+    <div class="slider">
+
+      <div class="slide-track">
+
+        <div class="slide">
+          <img src="/img/logos/01.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/02.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/03.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/04.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/05.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/06.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/07.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/08.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/09.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/10.png" alt="">
+        </div>
+
+        <!-- ----------- -->
+
+        <div class="slide">
+          <img src="/img/logos/01.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/02.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/03.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/04.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/05.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/06.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/07.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/08.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/09.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="/img/logos/10.png" alt="">
+        </div>
+
+      </div>
+    </div>
+    <!--  FIN carousel infinito logos  -->
 
   </main>
-  <footer>
+<!--   FIN del main -->
+
+
+
+ <!--  comienzo del footer -->
+  <footer id="contactar" class="footer" data-sr-id="5" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>compañía :</h4>
+          <ul>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a href="#">Nuestros servicios</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Afiliaciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Obtener ayuda :</h4>
+          <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Estado del pedido</a></li>
+            <li><a href="#">Opiniones</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contáctenos :<i class="bx bxs-phone"></i></h4>
+          <ul>
+            <li><a href="#">Cordoba :  +54 351 123-4567 </a></li>
+            <li><a href="#">Rosario :  +51 341 123-4567</a></li>
+            <li><a href="#">Capital :  +54 11 123-4567</a></li>
+            <li><a href="#">Gmail :   Mode_ropa@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos en redes :</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+  <!-- FIN del footer -->
 
 
   <script src="/js/index.js"></script>
+
+
+
 </body>
 
 </html>

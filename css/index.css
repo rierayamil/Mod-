@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -24,10 +24,10 @@ header {
     top: 0;
     width: 100%;
     color: aliceblue;
-    border: 1px solid rgba(194, 194, 194, 0.137);
-    border-radius: 0px 0px 10px 10px;
+    /*  border: 1px solid rgba(194, 194, 194, 0.137); */
+    /* border-radius: 0px 0px 10px 10px; */
     overflow: hidden;
-    /* box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 15px 25px rgba(42, 148, 65, 0.171);
     position: fixed;
     z-index: 100;
 }
@@ -36,6 +36,7 @@ nav {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.39);
     backdrop-filter: blur(30px);
+
     /* text-shadow: 0 0 10px rgba(16, 64, 74, 0.5); */
 }
 
@@ -115,7 +116,7 @@ input {
 /* fin NAVBAR */
 
 
-/* COMIENZO ANIMACION VERDE */
+/* COMIENZO ANIMACIÓN VERDE */
 .caja {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(20px);
@@ -223,17 +224,20 @@ input {
 
 /* FIN ANIMACIÓN VERDE */
 
-/* COMIENZO DEL MAIN */
+/* COMIENZO DEL carousel*/
 
 .contenido {
-    background-color: #3b3b3b3b;
+    
     border-radius: 10px;
     margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .imágenes {
+    overflow: hidden;
     justify-content: space-around;
     border-radius: 20px;
 }
@@ -245,7 +249,6 @@ input {
 
 .container img {
     border: solid 1px #2c2c2c5d;
-    width: 200px;
     border-radius: 5px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
@@ -259,14 +262,44 @@ input {
 
 /* FIN DEL MAIN */
 
+/* inicio cards */
+.cards {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
 
+.card {
+    width:95%;
+    margin-top:100px ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.card-body {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* FIN cards */
 
 
 /* inicio carousel infinito logos */
 .slider {
-    width: 75vw;
-    height: auto;
-    margin: auto;
+    
+    height: 60px;
+   
     overflow: hidden;
 
 }
@@ -307,26 +340,112 @@ input {
 
 /* fin carousel infinito logos */
 
-/* inicio cards */
-.cards{
-margin-top: 100px;
-}
-.card,.card2 {
-    width: max-content;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
-}
-
-.card-body {
-    position: relative;
+/* INICIO FOOTER */
+footer {
+    font-family: "Poppins", sans-serif;
+    background-color: #135e28b9;
+    backdrop-filter: blur(20px);
+    padding: 70px 0;
+    
+  }
+  
+  .footer .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  .footer-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  }
+  .footer ul {
+    list-style: none;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0, 15px;
+  }
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 35px;
+    bottom: -10px;
+    background-color: #5aa060;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 2px;
+  }
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover {
+    color: #235c2f;
+    background-color: #ffffff;
+  }
+  
+  /* fin footer */
+
+
+  /* comienzo de responsive */
+
+@media screen and (max-width:600px) {
+
+
+      .carousel img {
+        padding-bottom: 50px;
+
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+
+
+
+    .cards {
+        margin-top: -150px ;
+        scale: 0.8;
+    }
+    .card{
+        margin-top: 0px  ;
+    }
+
 }
