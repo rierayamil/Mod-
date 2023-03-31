@@ -338,12 +338,8 @@ input {
     100% {
         -webkit-transform: translateX(-100px * 20);
         transform: translateX(calc(-100px * 20));
-
     }
-
-
 }
-
 /* fin carousel infinito logos */
 
 /* INICIO FOOTER */
@@ -451,24 +447,29 @@ footer {
         padding-bottom: 50px;
 
     }
+    .carousel-caption{
+        text-shadow: 0 0 10px rgb(0, 0, 0);
+    }
 
     .carousel-caption h1 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .carousel-caption p {
-        font-size: 7px;
+        font-size: 13px;
     }
 
-    .container-title h1 {
-        background-color: #098313;
-        margin: 0px 0px 100px 0px;
-
-    }
+    
     /*FIN carrousel*/
 
 
     /* inicio cards  */
+
+    .container-title h1 {
+        
+        margin: 0px 0px 100px 0px;
+    }
+
     .cards {
         margin: -150px 0 0 0;
         scale: 0.8;
