@@ -16,26 +16,28 @@ body {
   height: 100vh;
 }
 
-/* h1 {
+h1 {
   font-weight: 700;
   letter-spacing: -1.5px;
   margin: 0;
   margin-bottom: 15px;
 }
 
-.logo{
-    color: #fff;
-    font-size: 45px;
-    line-height: 45px;
-       margin-bottom: 30px;
-    text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
-    text-decoration: underline;
+.logo {
+  color: #fff;
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+  text-decoration: underline;
 }
+
 .logo:hover {
   color: #2ab931;
 }
-h2{
-    margin-bottom: 10px;
+
+h2 {
+  margin-bottom: 10px;
 }
 
 p {
@@ -43,7 +45,7 @@ p {
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
-  margin: 5px 0 30px ;
+  margin: 5px 0 30px;
   text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
 }
 
@@ -101,7 +103,7 @@ button {
   font-weight: 700;
   margin: 10px;
   padding: 12px 80px;
-  
+
   text-transform: capitalize;
   transition: 0.3s ease-in-out;
 }
@@ -110,7 +112,7 @@ button {
 
 button:active {
   transform: scale(0.95);
-  transform: scaleX( 3px);
+  transform: scaleX(3px);
 }
 
 button:focus {
@@ -121,7 +123,7 @@ button.ghost {
   background-color: rgba(225, 225, 225, 0.2);
   border: 2px solid #fff;
   color: #fff;
-  }
+}
 
 
 
@@ -137,7 +139,7 @@ form {
 }
 
 input {
-    font-size: 13px;
+  font-size: 13px;
   background-color: #eee;
   border-radius: 10px;
   border: none;
@@ -162,7 +164,7 @@ input {
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
-  
+
 }
 
 .login-container {
@@ -190,6 +192,7 @@ input {
 }
 
 @keyframes show {
+
   0%,
   49.99% {
     opacity: 0;
@@ -204,7 +207,7 @@ input {
 }
 
 .overlay-container {
-  
+
   position: absolute;
   top: 0;
   left: 50%;
@@ -220,7 +223,7 @@ input {
 }
 
 .overlay {
-  
+
   background-image: url('/img/2I3c.gif');
   background-repeat: no-repeat;
   background-size: cover;
@@ -242,11 +245,9 @@ input {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(
-    to top,
-    rgba(38, 86, 100, 0.4) 40%,
-    rgba(46, 94, 109, 0)
-  );
+  background: linear-gradient(to top,
+      rgba(38, 86, 100, 0.4) 40%,
+      rgba(46, 94, 109, 0));
 }
 
 .container.right-panel-active .overlay {
@@ -304,8 +305,36 @@ input {
 
 .social-container a:hover {
   border: 1px solid #4bb6b7;
-} */
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* comienzo de responsive */
 @media screen and (max-width:600px) {
   .container {
     scale: 0.9;
@@ -314,8 +343,8 @@ input {
   h1 {
     font-weight: 700;
     letter-spacing: -1.5px;
-  margin: 60px 0 15px 0 ;
-    
+    margin: 60px 0 15px 0;
+
   }
 
   .logo {
@@ -342,14 +371,10 @@ input {
 
   span {
     font-size: 14px;
-   
-  }
-
-  .pass-link {
-    width: 90%;
-    margin-bottom: 40px;
 
   }
+
+
 
   a {
     display: flex;
@@ -358,11 +383,24 @@ input {
     font-size: 10px;
     text-decoration: none;
     padding: 0;
+    margin: 0;
     transition: 0.3s ease-in-out;
   }
 
   a:hover {
     color: #4bb6b7;
+  }
+
+  .pass-link {
+    width: 90%;
+    margin-bottom: 40px;
+    text-align: start;
+  }
+
+  .pass-link a {
+
+    font-size: 10px;
+
   }
 
   .content {
@@ -395,15 +433,19 @@ input {
 
   button {
     cursor: pointer;
-    margin: 10px 0 50px 0;
+    margin: 0;
     border-radius: 20px;
     border: 1px solid #4bb78a;
     background-color: #17ca26;
     color: #fff;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 700;
     width: 150px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-transform: capitalize;
     transition: 0.3s ease-in-out;
   }
@@ -426,13 +468,15 @@ input {
 
 
   form {
+    padding: 0;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    text-align: center;
+    width: 100%;
+    justify-content: center;
   }
 
   input {
@@ -552,6 +596,7 @@ input {
   }
 
   .overlay-panel {
+    padding: 5px;
     backdrop-filter: blur(5px);
     position: absolute;
     display: flex;

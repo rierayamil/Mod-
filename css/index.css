@@ -199,7 +199,7 @@ input {
     }
 
     50% {
-        transform: translate(20%, 100%);
+        transform: translate(150%, 80%);
     }
 
     100% {
@@ -227,7 +227,7 @@ input {
 /* COMIENZO DEL carousel*/
 
 .contenido {
-    
+
     border-radius: 10px;
     margin-top: 7rem;
     display: flex;
@@ -263,7 +263,12 @@ input {
 /* FIN DEL MAIN */
 
 /* inicio cards */
+.container-title h1 {
+    margin-top: 60px;
+}
+
 .cards {
+
     margin-top: 100px;
     position: relative;
     display: flex;
@@ -271,12 +276,12 @@ input {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
+
 }
 
 .card {
-    width:95%;
-    margin-top:100px ;
+    width: 95%;
+    margin-top: 100px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -292,14 +297,15 @@ input {
     justify-content: center;
     align-items: center;
 }
+
 /* FIN cards */
 
 
 /* inicio carousel infinito logos */
 .slider {
-    
+
     height: 60px;
-   
+
     overflow: hidden;
 
 }
@@ -346,34 +352,38 @@ footer {
     background-color: #135e28b9;
     backdrop-filter: blur(20px);
     padding: 70px 0;
-    
-  }
-  
-  .footer .container {
+
+}
+
+.footer .container {
     max-width: 1170px;
     margin: auto;
-  }
-  .footer-row {
+}
+
+.footer-row {
     display: flex;
     flex-wrap: wrap;
-  }
-  .footer ul {
+}
+
+.footer ul {
     list-style: none;
-  }
-  
-  .footer-col {
+}
+
+.footer-col {
     width: 25%;
     padding: 0, 15px;
-  }
-  .footer-col h4 {
+}
+
+.footer-col h4 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
-  }
-  .footer-col h4::before {
+}
+
+.footer-col h4::before {
     content: "";
     position: absolute;
     left: 35px;
@@ -382,11 +392,13 @@ footer {
     height: 2px;
     box-sizing: border-box;
     width: 50px;
-  }
-  .footer-col ul li:not(:last-child) {
+}
+
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
-  }
-  .footer-col ul li a {
+}
+
+.footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
     color: #ffffff;
@@ -395,12 +407,14 @@ footer {
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
-  }
-  .footer-col ul li a:hover {
+}
+
+.footer-col ul li a:hover {
     color: #ffffff;
     padding-left: 2px;
-  }
-  .footer-col .social-links a {
+}
+
+.footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -411,41 +425,73 @@ footer {
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
-  }
-  .footer-col .social-links a:hover {
+}
+
+.footer-col .social-links a:hover {
     color: #235c2f;
     background-color: #ffffff;
-  }
-  
-  /* fin footer */
+}
+
+/* fin footer */
 
 
-  /* comienzo de responsive */
+
+
+
+
+
+
+
+/* comienzo de responsive */
 
 @media screen and (max-width:600px) {
 
-
-      .carousel img {
+    /* carrousel  */
+    .carousel img {
         padding-bottom: 50px;
 
     }
 
     .carousel-caption h1 {
-        font-size: 25px;
-    }
-
-    .carousel-caption p {
         font-size: 15px;
     }
 
+    .carousel-caption p {
+        font-size: 7px;
+    }
+
+    .container-title h1 {
+        background-color: #098313;
+        margin: 0px 0px 100px 0px;
+
+    }
+    /*FIN carrousel*/
 
 
+    /* inicio cards  */
     .cards {
-        margin-top: -150px ;
+        margin: -150px 0 0 0;
         scale: 0.8;
     }
-    .card{
-        margin-top: 0px  ;
+
+    .card {
+        margin-top: 100px;
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.062), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
+   
+    /* FIN cards  */
+
+
+    /* inicio footer */
+ 
+    .footer-col {
+        width: 100%;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+    /* FIN footer */
 }

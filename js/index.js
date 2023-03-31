@@ -7,4 +7,4 @@ ScrollReveal({
 });
 ScrollReveal().reveal('.card-first',{delay:500, origin:'left'});
 ScrollReveal().reveal('.card-second',{delay:500, origin:'right'});
-
+ScrollReveal().reveal('.container-title',{delay:500, origin:'right'});
