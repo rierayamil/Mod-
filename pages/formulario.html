@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>inicio de sesión</title>
-   <!--  bootstrap -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-   integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-   crossorigin="anonymous"></script>
+  <!--  bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
   <!-- Iconos -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -21,71 +21,135 @@
 </head>
 
 
-  <body>
-    
-    <div class="container" id="container">
+<body>
+  <!------------------------------------------------------------------Inicio de registrarse -->
+  <div class="container" id="container">
 
-      <div class="form-container register-container">
-        <form action="#">
-          <h1>Registrarme</h1>
-          <input type="text" placeholder="Nombre de Usuario">
-          <input type="email" placeholder="@Email">
-          <input type="password" placeholder="Contraseña">
-         <a href="/index.html"><button>Registrar</button></a> 
-          <span>o iniciar con:</span>
-          <div class="social-container">
-            <a href=""><i class='bx bxl-google'></i></a>
-            <a href=""><i class='bx bxl-facebook-circle'></i></a>
-            <a href=""><i class='bx bxl-apple'></i></a>
-          </div>
-        </form>
-      </div>
+    <div class="form-container register-container" id="usuario-grupo">
+      <form class="formulario" id="formulario" action="#">
+        <h1>Registrarme</h1>
 
-      <div class="form-container login-container">
-        <form action="#">
-          <h1>Iniciar Sesión</h1>
-          <input type="email" placeholder="@Email">
-          <input type="password" placeholder="Contraseña">
-          <div class="content d-flex  flex-wrap">
-            <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="checkbox">
-              <label>recuérdeme</label>
-            </div>
-            <div class="">
-              <a href="#">¿Olvidaste <br> tu usuario o contraseña??</a>
-            </div>
+        <div class="formulario__grupo  w-100" id="grupo__usuario">
+          <div class="formulario__grupo-input w-100">
+            <input type="text" class="formulario__input " id="usuario" name="usuario" placeholder="Nombre de Usuario">
+            <i class='formulario__validacion-estado bx bxs-error-circle'></i>
           </div>
-          <a href="/index.html"><button>iniciar sesión</button></a>
-          <span>o continuar con:</span>
-          <div class="flex-row social-container">
-            <a class="col-sm-1" href=""><i class='bx bxl-google'></i></a>
-            <a class="col-sm-1" href=""><i class='bx bxl-facebook-circle'></i></a>
-            <a class="col-sm-1" href=""><i class='bx bxl-apple'></i></a>
-          </div>
-        </form>
-      </div>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números,
+            letras y guion
+            bajo
+          </p>
+        </div>
 
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <a href="/index.html"><h1 class="logo"> ModÉ<h1></a>
-                <h2> Bienvenido . </h2>
-                <p>Si ya tienes una cuenta, inicia sesión aquí</p>
-                <button class="ghost" id="login">iniciar sesión</button>
+        <div class="formulario__grupo w-100" id="grupo__email">
+          <div>
+            <input type="email" class="formulario__input" id="email" name="email" placeholder="@Email">
+            <i class='formulario__validacion-estado bx bxs-error-circle'></i>
           </div>
-          <div class="overlay-panel overlay-right">
-            <a href="/index.html"><h1 class="logo"> ModÉ<h1></a>
-                <h2> Bienvenido . </h2>
-                <p>Si no tienes una cuenta,<br> REGÍSTRATE aquí.</p>
-                <button class="ghost" id="register">Registrarme</button>
+          <p class="formulario__input-error">
+            <b> EL CORREO SOLO PUEDE CONTENER:</b> letras, números, puntos, guiones y guion bajo.
+          </p>
+        </div>
+        <div class="formulario__grupo w-100" id="grupo__contraseña">
+          <div>
+            <input type="password" class="formulario__input" id="contraseña" name="contraseña" placeholder="Contraseña">
+            <i class='formulario__validacion-estado bx bxs-error-circle'></i>
+          </div>
+          <p class="formulario__input-error">
+            La contraseña tiene que ser de 4 a 14 caracteres
+          </p>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p> <i class='bx bxs-error'></i> <b>Error:</b> Por favor complete el formulario Correctamente</p>
+        </div>
+
+        <div class="formulario__grupo formulario__btn-enviar">
+          <button type="submit" class="formulario--btn">Registrar</button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+            Registrado exitosamente!<i class='bx bx-check'></i></p>
+        </div>
+        <span>o regístrate con:</span>
+        <div class="social-container">
+          <a href=""><i class='bx bxl-google'></i></a>
+          <a href=""><i class='bx bxl-facebook-circle'></i></a>
+          <a href=""><i class='bx bxl-apple'></i></a>
+        </div>
+      </form>
+    </div>
+    <!------------------------------------------------------------------Fin de registrarse -->
+
+
+    <!------------------------------------------------------------------Inicio de Iniciar sesión-->
+    <div class="form-container login-container" id="usuario-grupo2">
+      <form class="formulario" id="formulario2" action="#">
+        <h1>Iniciar sesión</h1>
+
+        <div class="formulario__grupo w-100" id="grupo__email2">
+          <div>
+            <input type="email" class="formulario__input" id="email2" name="email2" placeholder="@Email">
+            <i class='formulario__validacion-estado bx bxs-error-circle'></i>
+          </div>
+          <p class="formulario__input-error">
+            Email Invalido</p>
+        </div>
+        <div class="formulario__grupo w-100" id="grupo__contraseña2">
+          <div>
+            <input type="password" class="formulario__input" id="contraseña2" name="contraseña2"
+              placeholder="Contraseña">
+            <i class='formulario__validacion-estado bx bxs-error-circle'></i>
+          </div>
+          <p class="formulario__input-error">
+            Contraseña invalida
+          </p>
+        </div>
+        <div class="content d-flex  flex-wrap">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label>recuérdeme</label>
+          </div>
+          <div class="">
+            <a href="#">¿Olvidaste <br> tu usuario o contraseña??</a>
           </div>
         </div>
-      </div>
-
+        <div class="formulario__grupo formulario__btn-enviar">
+          <a href="/index.html"><button type="submit">Iniciar sesión</button></a>
+        </div>
+        <span>o iniciar con:</span>
+        <div class="social-container">
+          <a href=""><i class='bx bxl-google'></i></a>
+          <a href=""><i class='bx bxl-facebook-circle'></i></a>
+          <a href=""><i class='bx bxl-apple'></i></a>
+        </div>
+      </form>
     </div>
+    <!------------------------------------------------------------------Fin de Iniciar Sesión -->
 
-    <script src="/js/formulario.js"></script>
 
-  </body>
+    <!------------------------------------------------------------------Inicio de ventana animadas-->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <a href="/index.html">
+            <h1 class="logo"> ModÉ<h1>
+          </a>
+          <h2> Bienvenido . </h2>
+          <p>Si ya tienes una cuenta, inicia sesión aquí</p>
+          <button class="ghost" id="login">iniciar sesión</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <a href="/index.html">
+            <h1 class="logo"> ModÉ<h1>
+          </a>
+          <h2> Bienvenido . </h2>
+          <p>Si no tienes una cuenta,<br> REGÍSTRATE aquí.</p>
+          <button class="ghost" id="register">Registrarme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------------------------Fin de ventana animadas-->
+  <script src="/js/formulario.js"></script>
+
+</body>
 
 </html>

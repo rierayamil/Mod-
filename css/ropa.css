@@ -9,15 +9,24 @@
     font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --verde: #17ca26;
+    --verde-secundario: #135e28b9;
+    --error: #c9352a;
+    --banco: #fff;
+    --gris: #333;
+}
+
 body::-webkit-scrollbar {
     width: 7px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #15b923;
+    background-color: var(--verde);
     border-radius: 10px;
 
 }
+
 /* comienzo del NAVBAR */
 header {
     top: 0;
@@ -102,14 +111,14 @@ input {
 }
 
 .iniciarSesión:hover {
-    color: #098313;
+    color: var(--verde);
     background-color: #92adf7a1;
 }
 
 .perfil {
     margin: 0px 10px 0px 5px;
     scale: 2.5;
-    color: #0ec91ebb;
+    color: var(--verde);
 }
 
 /* fin NAVBAR */
@@ -154,9 +163,6 @@ input {
     background-color: rgb(26, 221, 26);
     animation-name: circulo4;
 }
-
-
-
 
 @keyframes circulo1 {
     0% {
@@ -223,10 +229,13 @@ input {
 
 /* FIN ANIMACIÓN VERDE */
 
+
+/* inicio del main */
 .container {
     margin-top: 3rem;
     font-size: 18px;
 }
+
 .container img {
     border: solid 1px #2c2c2c5d;
     border-radius: 5px;
@@ -242,15 +251,16 @@ input {
 
 .corazon {
     cursor: pointer;
-    color: #098313;
-    font-size:xx-large;
+    color: var(--verde);
+    font-size: xx-large;
 }
-.corazon:hover{
+
+.corazon:hover {
     scale: 1.1;
     transition: 0.3s;
 }
 
-.comprar{
+.comprar {
     border-radius: 24px;
     width: 8rem;
     height: 40px;
@@ -258,10 +268,11 @@ input {
     background-color: rgba(6, 196, 85, 0.753);
     color: #000000;
 }
-.comprar:hover{
- color: aliceblue;
- scale: 1.1;
- transition: 0.3s;
+
+.comprar:hover {
+    color: aliceblue;
+    scale: 1.1;
+    transition: 0.3s;
 }
 
 /* FIN DEL MAIN */
@@ -269,7 +280,7 @@ input {
 /* INICIO FOOTER */
 footer {
     font-family: "Poppins", sans-serif;
-    background-color: #135e28b9;
+    background-color: var(--verde-secundario);
     backdrop-filter: blur(20px);
     padding: 70px 0;
 
@@ -296,7 +307,7 @@ footer {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #ffffff;
+    color: var(--banco);
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -321,16 +332,15 @@ footer {
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: var(--banco);
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #ffffff;
+    color: var(--banco);
     padding-left: 2px;
 }
 
@@ -344,13 +354,13 @@ footer {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--banco);
     transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
     color: #235c2f;
-    background-color: #ffffff;
+    background-color: var(--banco);
 }
 
 /* fin footer */
@@ -361,16 +371,16 @@ footer {
 @media screen and (max-width:700px) {
 
 
-        /* inicio footer */
+    /* inicio footer */
 
-        .footer-col {
-            width: 100%;
-        }
-    
-        .social-links {
-            display: flex;
-            justify-content: center;
-        }
+    .footer-col {
+        width: 100%;
     }
 
-    /* FIN footer */
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* FIN footer */
