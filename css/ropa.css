@@ -24,6 +24,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: var(--verde);
     border-radius: 10px;
+    -webkit-overflow-scrolling: touch;
 
 }
 
