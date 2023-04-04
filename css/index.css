@@ -130,6 +130,9 @@ input {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(20px);
     width: 100%;
+    height: 65px;
+    position: fixed;
+    overflow: hidden;
 }
 
 .box {
@@ -489,6 +492,26 @@ footer {
 
 @media screen and (max-width:700px) {
 
+    header {
+      
+        overflow: hidden;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    nav {
+      
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+    }    
+    .caja {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        height: 63px;
+        position: fixed;
+        overflow: hidden;
+    }
     /* carrousel  */
     .carousel-inner {
         margin: 100px 0 200px 0;
