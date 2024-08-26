@@ -1,0 +1,16 @@
+
+
+/* Estilo general para la imagen */
+.responsive-img {
+    max-width: 100%; /* La imagen nunca excederá el tamaño de su contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    display: block;  /* Evita el espacio adicional debajo de la imagen */
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media only screen and (max-width: 768px) {
+    .responsive-img {
+      width: 100%;  /* Asegura que la imagen ocupe el 100% del ancho de la pantalla */
+      height: auto; /* Mantiene la proporción original */
+    }
+  }

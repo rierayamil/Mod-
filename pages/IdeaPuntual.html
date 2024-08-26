@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/punto.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class=".responsive-img">
+        <img src="/img/texto expresivo.png" alt="Descripción de la imagen" class="responsive-img">
+      </div>
+   
+    <style>
+
+    body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+  
+      #circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="circle"></div>
+  
+    <script>
+      const circle = document.getElementById('circle');
+      let x = Math.random() * window.innerWidth;
+      let y = Math.random() * window.innerHeight;
+      let dx = 2;
+      let dy = 2;
+  
+      function changeColor() {
+        const colors = ['red', 'green', 'blue', 'yellow', 'orange',];
+        circle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      }
+  
+      function animate() {
+        x += dx;
+        y += dy;
+  
+        if (x + circle.offsetWidth > window.innerWidth || x < 0) {
+          dx = -dx;
+          changeColor();
+        }
+  
+        if (y + circle.offsetHeight > window.innerHeight || y < 0) {
+          dy = -dy;
+          changeColor();
+        }
+  
+        circle.style.left = x + 'px';
+        circle.style.top = y + 'px';
+  
+        requestAnimationFrame(animate);
+      }
+  
+      animate();
+    </script>
+</body>
+</html>
